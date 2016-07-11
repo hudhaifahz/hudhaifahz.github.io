@@ -2594,6 +2594,7 @@
 	  var google = null;
 	  var $maps;
 	  var namespace = '.w-widget-map';
+	  var apiKey = 'AIzaSyBks0W0NawnPju70JQS5XXPOTTrguDQjWE';
 
 	  // -----------------------------------
 	  // Module methods
@@ -2640,7 +2641,7 @@
 	    if (!$maps.length) return;
 
 	    if (google === null) {
-	      $.getScript('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=_wf_maps_loaded');
+	      $.getScript('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=_wf_maps_loaded&key=' + apiKey);
 	      window._wf_maps_loaded = mapsLoaded;
 	    } else {
 	      mapsLoaded();
@@ -4575,23 +4576,5 @@
  * Webflow: Interactions: Init
  */
 Webflow.require('ix').init([
-  {"slug":"vikki","name":"Vikki","value":{"style":{},"triggers":[{"type":"click","selector":".column-6","stepsA":[{"transition":"transform 500ms ease 0ms","scaleX":1.5,"scaleY":1.5,"scaleZ":1},{"transition":"transform 500ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"qureshi","name":"Qureshi","value":{"style":{},"triggers":[{"type":"click","selector":".column-5","stepsA":[{"transition":"transform 500ms ease 0ms","scaleX":1.5,"scaleY":1.5,"scaleZ":1},{"transition":"transform 500ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"mcgee","name":"McGee","value":{"style":{},"triggers":[{"type":"click","selector":".column-4","stepsA":[{"transition":"transform 500ms ease 0ms","scaleX":1.5,"scaleY":1.5,"scaleZ":1},{"transition":"transform 500ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"lee","name":"Lee","value":{"style":{},"triggers":[{"type":"click","selector":".column-3","stepsA":[{"transition":"transform 500ms ease 0ms","scaleX":1.5,"scaleY":1.5,"scaleZ":1},{"transition":"transform 500ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"hamid","name":"Hamid","value":{"style":{},"triggers":[{"type":"click","selector":".column-2","stepsA":[{"transition":"transform 500ms ease 0ms","scaleX":1.5,"scaleY":1.5,"scaleZ":1},{"transition":"transform 500ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"zuhaira","name":"Zuhaira","value":{"style":{},"triggers":[{"type":"click","selector":".column1","stepsA":[{"transition":"transform 500ms ease 0ms","scaleX":1.5,"scaleY":1.5,"scaleZ":1},{"transition":"transform 500ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"full-bio","name":"full bio","value":{"style":{},"triggers":[{"type":"click","selector":".cont","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
-  {"slug":"click","name":"Click","value":{"style":{},"triggers":[{"type":"click","selector":".script1","siblings":true,"stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
-  {"slug":"show-hide","name":"Show-Hide","value":{"style":{},"triggers":[{"type":"click","selector":".program","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
-  {"slug":"killdescription","name":"KillDescription","value":{"style":{},"triggers":[{"type":"click","selector":".speakerdescription","stepsA":[{"display":"none"}],"stepsB":[]}]}},
-  {"slug":"1","name":"1","value":{"style":{},"triggers":[{"type":"click","selector":"._1","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
-  {"slug":"2","name":"2","value":{"style":{},"triggers":[{"type":"click","selector":"._2","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
-  {"slug":"3","name":"3","value":{"style":{},"triggers":[{"type":"click","selector":"._3","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
-  {"slug":"4","name":"4","value":{"style":{},"triggers":[{"type":"click","selector":"._4","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
-  {"slug":"5","name":"5","value":{"style":{},"triggers":[{"type":"click","selector":"._5","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
-  {"slug":"6","name":"6","value":{"style":{},"triggers":[{"type":"click","selector":"._6","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
-  {"slug":"7","name":"7","value":{"style":{},"triggers":[{"type":"click","selector":"._7","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
-  {"slug":"8","name":"8","value":{"style":{},"triggers":[{"type":"click","selector":"._8","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
-  {"slug":"hovvis","name":"HovVis","value":{"style":{},"triggers":[{"type":"hover","selector":".honourtext","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}}
+  {"slug":"featured-wrapper","name":"featured wrapper","value":{"style":{},"triggers":[{"type":"hover","stepsA":[{"transition":"transform 1000ms ease 0ms","scaleX":1.05,"scaleY":1.05,"scaleZ":1}],"stepsB":[{"transition":"transform 600ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}]}]}}
 ]);
